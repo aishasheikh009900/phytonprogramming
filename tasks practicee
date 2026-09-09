@@ -1,0 +1,74 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOSdmhvg2bRDY5t//nwEvi4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aishasheikh009900/phytonprogramming/blob/python.aa/tasks%20practicee\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h-j9zzVhdD04",
+        "outputId": "9b8edbe2-b23b-4033-911b-f56ddc3ebcc7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your name:ayesha\n",
+            "enter your age:29\n",
+            "user_name: ayesha\n",
+            "ticket price: 700\n"
+          ]
+        }
+      ],
+      "source": [
+        "#task no 1\n",
+        "#cinema ticket price\n",
+        "user_name= input(\"enter your name:\")\n",
+        "user_age= int(input(\"enter your age:\"))\n",
+        "\n",
+        "if user_age <5 or user_age >100:\n",
+        "  ticket_price = 0\n",
+        "\n",
+        "if user_age >5 or user_age <12:\n",
+        "  ticket_price = 300\n",
+        "\n",
+        "if user_age <= 59:\n",
+        "  ticket_price = 700\n",
+        "\n",
+        "else:\n",
+        "    ticket_price = 400\n",
+        "\n",
+        "print(\"user_name:\",user_name)\n",
+        "print(\"ticket price:\",ticket_price)"
+      ]
+    }
+  ]
+}
