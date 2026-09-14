@@ -1,0 +1,442 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMtU8txXCLVi5BICywf9042",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aishasheikh009900/phytonprogramming/blob/python.aa/practice\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "ZMs_PTZtrwRI"
+      },
+      "outputs": [],
+      "source": [
+        "#task 9\n",
+        "message = input(\"enter your message:\")\n",
+        "\n",
+        "total_character = len(message)\n",
+        "\n",
+        "total_words = len(message.split())\n",
+        "\n",
+        "vowel = \"aeiouAEIOU\"\n",
+        "vowel_count = 0\n",
+        "for vowel in message:\n",
+        "  if vowel in vovel:\n",
+        "    vowel_count +=1\n",
+        "\n",
+        "  total_space = message.count(\" \")\n",
+        "  uuper_case = message.upper()\n",
+        "\n",
+        "if \"python\" or \"PYTHON\" essage:\n",
+        "  python_exist = \"yes\"\n",
+        "else:\n",
+        "  python_exist = \"no\"\n",
+        "\n",
+        " print(\"=======message analyzer======\")\n",
+        "\n",
+        "print(\"message:\", message)\n",
+        "print(\"total character:\",total_character)\n",
+        "print(\"total words:\",total_words)\n",
+        "print(\"total vowel:\",vowel_count)\n",
+        "print(\"total space:\",total_space)\n",
+        "print(\"upper_case_formatting: \",uuper_case)\n",
+        "print(\"python_exist:\", python_exist)\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "ifLsp2aVzhyd",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "874c8f17-371e-4808-bdd9-d78767c751b2"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "\n",
+            "====contact book====\n",
+            "1. add contact\n",
+            "2. search contact\n",
+            "3. display all contact\n",
+            "4. exit\n",
+            "enter your choice: 2929\n",
+            "invalid choice\n",
+            "\n",
+            "====contact book====\n",
+            "1. add contact\n",
+            "2. search contact\n",
+            "3. display all contact\n",
+            "4. exit\n",
+            "enter your choice: 4\n"
+          ]
+        }
+      ],
+      "source": [
+        "#task 10\n",
+        "contact={}\n",
+        "\n",
+        "while True:\n",
+        "  print(\"\\n====contact book====\")\n",
+        "  print(\"1. add contact\")\n",
+        "  print(\"2. search contact\")\n",
+        "  print(\"3. display all contact\")\n",
+        "  print(\"4. exit\")\n",
+        "\n",
+        "  choice = int(input(\"enter your choice: \"))\n",
+        "\n",
+        "  if choice == 1:\n",
+        "    name = input(\"enter name: \")\n",
+        "    phone = input(\"enter phone number: \")\n",
+        "    if name in contact:\n",
+        "      print(\"contact already exists\")\n",
+        "    else:\n",
+        "      contact[name] = phone\n",
+        "      print(\"contact added successfully\")\n",
+        "\n",
+        "  elif choice == 2:\n",
+        "    name = input(\"enter name: \")\n",
+        "    if name in contact:\n",
+        "      print(\"phone number: \", contact[name])\n",
+        "    else:\n",
+        "      print(\"contact not found\")\n",
+        "\n",
+        "  elif choice == 3:\n",
+        "    print(\"Name\\t\\tPhone\")\n",
+        "    for name, phone in contact.items():\n",
+        "      print(name, \"\\t\", phone)\n",
+        "\n",
+        "  elif choice == 4:\n",
+        "    break\n",
+        "\n",
+        "  else:\n",
+        "    print(\"invalid choice\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "customer_name = input(\"enter your name: \")\n",
+        "customer_age = int(input(\"enter your age: \"))\n",
+        "\n",
+        "if customer_age < 5 or customer_age > 100:\n",
+        "  ticket_price = 0\n",
+        "elif customer_age <= 12:\n",
+        "  ticket_price = 700\n",
+        "\n",
+        "else:\n",
+        "  ticket_price = 400\n",
+        "print(\"customer_name:\",customer_name)\n",
+        "print(\"ticket_price:\",ticket_price)"
+      ],
+      "metadata": {
+        "id": "_w7KsXvT7XBU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "17d7cc51-4a18-411a-e1e3-f3269d65737f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your name: ayesha\n",
+            "enter your age: 21\n",
+            "customer_name: ayesha\n",
+            "ticket_price: 400\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "celsuis = float(input(\"enter temperature in celsius\"))\n",
+        "farhenhiet = (celsuis * 9/5) + 32\n",
+        "\n",
+        "if celsuis < 10:\n",
+        " weather = \"very cold\"\n",
+        "\n",
+        "elif celsuis <=19:\n",
+        "  weather = \"cold\"\n",
+        "\n",
+        "elif celsuis <=20:\n",
+        "  weather = \"normal\"\n",
+        "\n",
+        "else:\n",
+        "     weather = \"hot\"\n",
+        "\n",
+        "print(\"temperature:\", celsuis)\n",
+        "print(\"weather:\",weather)"
+      ],
+      "metadata": {
+        "id": "hXG7N1eI2Gyn",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 228
+        },
+        "outputId": "3bf4c010-14d5-471b-e5dc-fd7a97e04953"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter temperature in celsius34\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'temperature' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_2420/2444301858.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mfarhenhiet\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mcelsuis\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0;36m9\u001b[0m\u001b[0;34m/\u001b[0m\u001b[0;36m5\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m32\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m \u001b[0;32mif\u001b[0m \u001b[0mtemperature\u001b[0m \u001b[0;34m<\u001b[0m \u001b[0;36m10\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m  \u001b[0mweather\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m\"very cold\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'temperature' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3\n",
+        "mobile_number = input(\"enter your mobile_number: \")\n",
+        "recharge_amount = int(input(\"enter your recharge amount: \"))\n",
+        "\n",
+        "Tax = recharge_amount * 3 / 100\n",
+        "final_balance = recharge_amount - Tax\n",
+        "\n",
+        "print(\"mobile_number:\",mobile_number)\n",
+        "print(\"recharge_amount:\",recharge_amount)\n",
+        "print(\"Tax:\",Tax)\n",
+        "print(\"final_balance:\",final_balance)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xhEkv5F3wqQ4",
+        "outputId": "98b2621f-a5f7-4140-fd10-39a07703c90a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your mobile_number: 03448392\n",
+            "enter your recharge amount: 300\n",
+            "mobile_number: 03448392\n",
+            "recharge_amount: 300\n",
+            "Tax: 9.0\n",
+            "final_balance: 291.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4\n",
+        "total_steps = 0\n",
+        "\n",
+        "for i in range(7):\n",
+        "\n",
+        " daily_steps = int(input(\"enter your total steps:\"))\n",
+        "total_steps += daily_steps\n",
+        "\n",
+        "average_steps = total_steps / 7\n",
+        "\n",
+        "print(\"total_steps:\",total_steps)\n",
+        "print(\"average_steps:\",average_steps)\n",
+        "\n",
+        "if average_steps <5000:\n",
+        "  print(\"active week\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"needs more activity baby\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PKj8IkHAxk5r",
+        "outputId": "684e0ef2-f737-409d-fcf2-990d895f5587"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your total steps:200\n",
+            "enter your total steps:90\n",
+            "enter your total steps:90\n",
+            "enter your total steps:89\n",
+            "enter your total steps:76\n",
+            "enter your total steps:88\n",
+            "enter your total steps:890\n",
+            "total_steps: 890\n",
+            "average_steps: 127.14285714285714\n",
+            "active week\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#5\n",
+        "secret_pin = 292929\n",
+        "for i in range(1,4):\n",
+        "\n",
+        " user_pin = int(input(\"enter your pin\"))\n",
+        " if user_pin == secret_pin:\n",
+        "    print(\"perfect here you go\")\n",
+        "\n",
+        " else:\n",
+        "    print(\"soory babe\")\n",
+        "    print(f\"number of attempts:{i}\")\n",
+        "    if i == 3:\n",
+        "      print(\"account blocked\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bvOMTRih0FN-",
+        "outputId": "ce8a2440-2995-4951-dd8c-efc7cfceb619"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your pin2345\n",
+            "soory babe\n",
+            "number of attempts:1\n",
+            "enter your pin234\n",
+            "soory babe\n",
+            "number of attempts:2\n",
+            "enter your pin292929\n",
+            "perfect here you go\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6\n",
+        "total_products_str = input(\"enter your total products:\")\n",
+        "try:\n",
+        "  total_products = int(total_products_str)\n",
+        "except ValueError:\n",
+        "  print(\"Invalid input for total products. Please enter a number.\")\n",
+        "  total_products = 0 # Default to 0 to avoid further errors if input is invalid\n",
+        "\n",
+        "grand_total = 0\n",
+        "\n",
+        "for i in range(total_products):\n",
+        "  print(f\"\\nproduct {i+1}\")\n",
+        "\n",
+        "  product_name = input(\"enter your product name:\")\n",
+        "  try:\n",
+        "    product_quantity = int(input(\"enter your product quantity:\"))\n",
+        "    product_price = float(input(\"enter your product price:\"))\n",
+        "  except ValueError:\n",
+        "    print(\"Invalid input for quantity or price. Please enter numbers.\")\n",
+        "    product_quantity = 0\n",
+        "    product_price = 0.0\n",
+        "\n",
+        "  sub_total = product_quantity * product_price\n",
+        "  grand_total += sub_total\n",
+        "\n",
+        "  print(f\"subtotal:{sub_total}\")\n",
+        "\n",
+        "print(f\"\\ngrand_total: {grand_total}\")\n",
+        "\n",
+        "if grand_total >= 5000:\n",
+        "    discount = grand_total * 0.3\n",
+        "else:\n",
+        "    discount = 0\n",
+        "\n",
+        "def total_bill():\n",
+        "    print(\"====== Bill ======\")\n",
+        "\n",
+        "total_bill()\n",
+        "\n",
+        "print(f\"Total: {grand_total}\")\n",
+        "print(f\"Discount: {discount}\")\n",
+        "print(f\"Grand Total: {grand_total - discount}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "44wij83h2ODm",
+        "outputId": "bf330c58-e2a7-4c07-bc75-95403e8e706a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your total products:mlk\n",
+            "Invalid input for total products. Please enter a number.\n",
+            "\n",
+            "grand_total: 0\n",
+            "====== Bill ======\n",
+            "Total: 0\n",
+            "Discount: 0\n",
+            "Grand Total: 0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "F__x8tbVEle2"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
